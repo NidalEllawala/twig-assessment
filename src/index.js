@@ -31,16 +31,16 @@ const groupArrayElements = (arr, n) => {
   }
   
   //helper function to keep code DRY
-  function distributeEvenly(t, n) {
+  function distributeEvenly(length, n) {
     let j = 0;
-    const subArrayLength = t / n; 
-    while (j < t) {
+    const subArrayLength = length / n; 
+    while (j < length) {
       result.push(arr.slice(j, j + subArrayLength));
       j += subArrayLength;
     }
   }
 }
 
-console.log(groupArrayElements([1,2,3,4,5], 3));
-//console.log(groupArrayElements([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], 5));
 
+//console.log(groupArrayElements([1,2,3,4,5], 3));
+console.log(groupArrayElements([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16], 5));
