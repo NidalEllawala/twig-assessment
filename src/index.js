@@ -17,7 +17,7 @@ const groupArrayElements = (arr, n) => {
     //push remainder to last element of result
     result.push(arr.slice(-1));
     return result;
-  //if array can't be evenly distributed and remainder > 0  
+  //if array can't be evenly distributed and remainder > 1  
   } else {
     //get closest possible even distribution
     let i = length - 1;
