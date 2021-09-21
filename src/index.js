@@ -9,7 +9,7 @@ const groupArrayElements = (arr, n) => {
     return result;
   //if array can be evenly distributed  
   } else if (length % n === 0) {
-    distributeEvenly(length, n, result);
+    distributeEvenly(length, n);
     return result;
   //if array can't be evenly distributed and remainder = 1
   } else if ((length-1)%(n-1) === 0) {
